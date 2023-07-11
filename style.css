@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Audiowide&family=Bad+Script&family=Belanosima&family=Calistoga&family=Caveat:wght@600&family=Cherry+Bomb+One&family=Courgette&family=Geologica:wght@600&family=Handlee&family=Kaushan+Script&family=Merienda&family=Nunito+Sans&family=Nunito:wght@200;300;400;500;600&family=Patua+One&family=Play&family=Roboto:wght@300&family=Yanone+Kaffeesatz&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    
+}
+:root{
+    --main-color: #be9c79;
+    --black:#333;
+    --white:#fff;
+    --light-color:#666;
+    --border:1rem solid var(var(--black));
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+header{
+    position: sticky;
+    top: 0;
+}
+.navContainer{
+    box-shadow: var(--box-shadow);
+   
+}
+nav{
+    height: 10vh;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    height: 50px;
+    padding: 0 0 0 11rem;
+}
+.logo img{
+    height: 80%;
+}
+.navLinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    margin-right: 12rem;
+}
+.navLinks li{
+    list-style-type: none;
+}
+.navLinks a{
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: var(--black);
+}
+.navLinks a:hover{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+.checkButton{
+    color: #333;
+    font-size: 25px;
+    display: none;
+    margin-right: 15px;
+}
+#check{
+    display: none;
+}
+.heroSection{
+    background-color: var(--main-color);
+    background: linear-gradient(90deg, var(--white),transparent 70%), url(./images/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+.content{
+    height: 100%;
+    width: 50%;
+    padding: 230px 150px;
+    text-align: center;
+}
+.content h1{
+    font-family: 'Merienda', cursive;
+    font-size: 60px;
+    color: var(--black);
+}
+.content p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px; 
+    line-height: 2;
+    padding: 10px;
+    color: var(--light-color);
+}
+.content button{
+    padding: 10px 30px;
+    background-color: var(--main-color);
+    border: none;
+    font-size: 18px;
+   
+}
+.content button:hover{
+    background-color: var(--black);
+}
+.content button a{
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    color: var(--white);
+}
+.about{
+    /* height: 85vh; */
+    display: flex;
+    padding-top: 30px;
+}
+.text{
+    height: 70%;
+    width: 70%;
+    padding: 170px 110px 170px 40px;
+}
+.text h3{
+    font-family: 'Merienda', cursive;
+    font-size: 45px;
+    color: var(--black);
+}
+.text p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px; 
+    line-height: 2;
+    padding: 10px 0;
+    color: var(--light-color);
+}
+.text button{
+    padding: 10px 30px;
+    background-color: var(--main-color);
+    border: none;
+    font-size: 18px;
+}
+.text button:hover{
+    background-color: var(--black);
+}
+.text button a{
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    color: var(--white);
+}
+.image{
+    height: 35rem;
+    padding: 0 0 0 10rem;
+}
+.image img{
+    height: 100%;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.heading img{
+    height: 40px;
+
+}
+.heading h3{
+    font-family: 'Merienda', cursive;
+    font-size: 40px;
+    color: var(--black);
+}
+.facility .box-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 2rem;
+    padding: 0 160px;
+
+}
+.box-container .box{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    line-height: 2;
+}
+.box-container .box p{
+    font-size: 15px;
+    color: var(--light-color);
+}
+.box-container .box h3{
+    font-size: 20px;
+    color: var(--black);
+}
+.popular .heading{
+    padding: 50px 0px 0 0;
+}
+.popular-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 2rem;
+    justify-items: center;
+    padding: 50px 250px;
+    text-align: center;
+}
+.popular-container h3{
+    font-family: 'Nunito', sans-serif;
+    color: var(--black);
+    font-size: 20px;
+}
+.gallery-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 1rem;
+    justify-items: center;
+    padding: 50px 250px;
+    text-align: center;
+
+}
+.gall img{
+    aspect-ratio: 3/2;
+    width: 100%;
+    object-fit: cover;
+}
+.team-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 1rem;
+    justify-items: center;
+    padding: 50px 270px;
+    text-align: center;
+}
+.tea img{
+    aspect-ratio: 1/1;
+    width: 100%;
+    object-fit: cover;
+}
+.tea p{
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:576px){
+    .logo{
+        padding: 0 0 0 15px;
+    }
+    .navLinks{
+        display: none;
+        background-color: var(--white);
+        position: absolute;
+        top: 70px;
+        flex-direction: column;
+        height: 300px;
+        width: 100%;
+    }
+    .navLinks li{
+        background-color: var(--white);
+        height: 25%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navLinks li:hover{
+        background-color: var(--main-color);
+    }
+    .checkButton{
+        display: block;
+    }
+    #check:checked~.navLinks{
+        display: flex;
+    }
+    .content{
+        width: 100%;
+        padding: 240px 50px;
+    }
+    .content h1{
+        font-size: 35px;
+        width: 100%;
+    }
+    .content p{
+        font-size: 14px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .image{
+        padding: 0;
+        height: 25rem;
+        display: flex;
+        justify-content: center;
+    }
+    .text{
+        width: 100%;
+        padding: 20px 20px;
+    }
+    .text h3{
+        font-size: 26px;
+        width: 100%;
+    }
+    .text p{
+        font-size: 14px;
+    }
+    .image{
+        padding: 0 0 0 0;
+    }
+    .facility .heading{
+        padding: 20px 0 10px 0;
+    }
+    .facility .box-container{
+        padding: 0 100px 0 100px;
+    }
+    .box-container{
+        padding: 0;
+    }
+    .popular .heading{
+        padding: 35px 0;
+    }
+    .popular-container{
+        padding: 0 ;
+    }
+    .gallery .heading{
+        padding: 30px 0;
+    }
+    .gallery-container{
+        padding: 10px 100px;
+        justify-items: center;
+    }
+    .team .heading{
+        padding: 30px 0;
+    }
+    .team-container{
+        padding: 10px 100px;
+        justify-items: center;
+    }
+
+}
